@@ -1,0 +1,90 @@
+/* Home Section Styles */
+.home-section {
+    height: calc(100vh - 80px);
+    /* Subtracting navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.home-greet {
+    color: var(--accent-color);
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 20px;
+}
+
+.home-name {
+    font-size: clamp(40px, 8vw, 80px);
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.home-subtitle {
+    font-size: clamp(30px, 5vw, 50px);
+    color: var(--text-secondary);
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.home-description {
+    max-width: 600px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-resume {
+    padding: 1rem 1.75rem;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 4px;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-resume:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+.home-socials {
+    display: flex;
+    gap: 20px;
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+}
+
+.home-socials a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .home-section {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .home-description {
+        margin: 0 auto 40px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

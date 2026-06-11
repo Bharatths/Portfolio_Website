@@ -1,0 +1,131 @@
+/* Contact Section Styles */
+.contact-section {
+    padding: 100px 10%;
+    background-color: var(--secondary-bg);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.contact-intro {
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    text-align: left;
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.success-message {
+    padding: 60px 40px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.success-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--accent-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success-message h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.btn-back:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--white);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--text-secondary);
+    background-color: var(--secondary-bg);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(100, 255, 218, 0.3);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 100px 5%;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+}

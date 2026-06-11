@@ -1,0 +1,65 @@
+/* Skills Section Styles */
+.skills-section {
+    padding: 100px 10%;
+    background-color: var(--bg-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.skill-card {
+    background-color: var(--secondary-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.skill-name {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.skill-percentage {
+    color: var(--accent-color);
+    font-family: 'Space Mono', monospace;
+}
+
+.skill-bar-container {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
